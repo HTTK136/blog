@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TCP/IP on Blog chia sẻ về mạng</title>
+    <link>https://httk136.github.io/blog/tags/tcp/ip/</link>
+    <description>Recent content in TCP/IP on Blog chia sẻ về mạng</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://httk136.github.io/blog/tags/tcp/ip/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mô hình OSI và TCP/IP</title>
+      <link>https://httk136.github.io/blog/posts/bai-8-mo-hinh-osi-tcpip/</link>
+      <pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://httk136.github.io/blog/posts/bai-8-mo-hinh-osi-tcpip/</guid>
+      <description>&lt;h3 id=&#34;mở-đầu&#34;&gt;Mở đầu&lt;/h3&gt;&#xA;&lt;p&gt;Trong lĩnh vực &lt;strong&gt;mạng máy tính&lt;/strong&gt;, để các thiết bị có thể giao tiếp với nhau, người ta cần một hệ thống chuẩn hóa các quy tắc và cách thức truyền dữ liệu.&lt;br&gt;&#xA;Hai mô hình phổ biến nhất là:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mô hình OSI (Open Systems Interconnection)&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mô hình TCP/IP&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Việc hiểu rõ hai mô hình này giúp chúng ta dễ dàng hình dung quá trình dữ liệu đi từ máy tính này sang máy tính khác.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

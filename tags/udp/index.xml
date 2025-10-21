@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UDP on Blog chia sẻ về mạng</title>
+    <link>https://httk136.github.io/blog/tags/udp/</link>
+    <description>Recent content in UDP on Blog chia sẻ về mạng</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://httk136.github.io/blog/tags/udp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giao thức TCP và UDP</title>
+      <link>https://httk136.github.io/blog/posts/bai-9-tcp-udp/</link>
+      <pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://httk136.github.io/blog/posts/bai-9-tcp-udp/</guid>
+      <description>&lt;h3 id=&#34;mở-đầu&#34;&gt;Mở đầu&lt;/h3&gt;&#xA;&lt;p&gt;Trong mạng máy tính, khi dữ liệu được truyền đi qua Internet, nó cần có một &lt;strong&gt;giao thức vận chuyển (transport protocol)&lt;/strong&gt; để đảm bảo việc gửi và nhận đúng cách.&lt;br&gt;&#xA;Hai giao thức phổ biến nhất ở tầng Giao vận (Transport Layer) là:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;TCP (Transmission Control Protocol)&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;UDP (User Datagram Protocol)&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-giao-thức-tcp-transmission-control-protocol&#34;&gt;1. Giao thức TCP (Transmission Control Protocol)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-đặc-điểm-chính&#34;&gt;1.1. Đặc điểm chính&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Kết nối hướng (connection-oriented)&lt;/strong&gt;: phải thiết lập kết nối trước khi truyền dữ liệu.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Đảm bảo độ tin cậy (reliable)&lt;/strong&gt;: dữ liệu được gửi theo thứ tự, không mất mát.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cơ chế kiểm soát&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Chia dữ liệu thành các segment.&lt;/li&gt;&#xA;&lt;li&gt;Đánh số thứ tự.&lt;/li&gt;&#xA;&lt;li&gt;Gửi lại gói tin nếu mất.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ứng dụng&lt;/strong&gt;:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Web (HTTP/HTTPS).&lt;/li&gt;&#xA;&lt;li&gt;Email (SMTP, IMAP, POP3).&lt;/li&gt;&#xA;&lt;li&gt;Truyền file (FTP).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;12-ví-dụ-minh-họa&#34;&gt;1.2. Ví dụ minh họa&lt;/h3&gt;&#xA;&lt;p&gt;Khi bạn tải một file, TCP đảm bảo &lt;strong&gt;từng byte dữ liệu đến đúng thứ tự&lt;/strong&gt;, không bị thiếu, để bạn có file hoàn chỉnh.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

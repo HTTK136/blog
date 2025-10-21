@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Variables on Blog chia sẻ về mạng</title>
+    <link>https://httk136.github.io/blog/tags/variables/</link>
+    <description>Recent content in Variables on Blog chia sẻ về mạng</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://httk136.github.io/blog/tags/variables/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Biến và Kiểu dữ liệu trong JavaScript</title>
+      <link>https://httk136.github.io/blog/posts/bai-2-bien-va-kieu-du-lieu/</link>
+      <pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://httk136.github.io/blog/posts/bai-2-bien-va-kieu-du-lieu/</guid>
+      <description>&lt;h3 id=&#34;mở-đầu&#34;&gt;Mở đầu&lt;/h3&gt;&#xA;&lt;p&gt;JavaScript là một trong những ngôn ngữ lập trình phổ biến nhất hiện nay, được dùng rộng rãi để xây dựng website, ứng dụng và nhiều công nghệ web hiện đại.&lt;br&gt;&#xA;Để học tốt JavaScript, bạn cần nắm vững hai khái niệm quan trọng nhất: &lt;strong&gt;Biến (Variables)&lt;/strong&gt; và &lt;strong&gt;Kiểu dữ liệu (Data Types)&lt;/strong&gt;.&lt;br&gt;&#xA;Biến giúp bạn lưu trữ thông tin, còn kiểu dữ liệu quyết định dạng của thông tin đó. Hiểu rõ cách khai báo biến và các kiểu dữ liệu sẽ giúp bạn viết chương trình dễ bảo trì, dễ mở rộng và ít gặp lỗi hơn.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

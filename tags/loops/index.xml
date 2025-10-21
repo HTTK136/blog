@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Loops on Blog chia sẻ về mạng</title>
+    <link>https://httk136.github.io/blog/tags/loops/</link>
+    <description>Recent content in Loops on Blog chia sẻ về mạng</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://httk136.github.io/blog/tags/loops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Điều kiện và Vòng lặp trong JavaScript</title>
+      <link>https://httk136.github.io/blog/posts/bai-3-dieu-kien-va-vong-lap/</link>
+      <pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://httk136.github.io/blog/posts/bai-3-dieu-kien-va-vong-lap/</guid>
+      <description>&lt;h3 id=&#34;mở-đầu&#34;&gt;Mở đầu&lt;/h3&gt;&#xA;&lt;p&gt;Trong lập trình, &lt;strong&gt;câu lệnh điều kiện&lt;/strong&gt; và &lt;strong&gt;vòng lặp&lt;/strong&gt; là hai công cụ quan trọng giúp chương trình hoạt động theo logic mong muốn.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Câu lệnh điều kiện&lt;/strong&gt;: cho phép chương trình ra quyết định dựa trên các điều kiện.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Vòng lặp&lt;/strong&gt;: cho phép lặp lại một đoạn code nhiều lần, tiết kiệm thời gian và tránh lặp lại không cần thiết.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-câu-lệnh-điều-kiện-trong-javascript&#34;&gt;1. Câu lệnh điều kiện trong JavaScript&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-if&#34;&gt;1.1. &lt;code&gt;if&lt;/code&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Dùng để kiểm tra một điều kiện, nếu điều kiện đúng (&lt;code&gt;true&lt;/code&gt;) thì thực thi đoạn code.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

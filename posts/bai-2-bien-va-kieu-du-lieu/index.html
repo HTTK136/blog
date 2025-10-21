@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biến và Kiểu dữ liệu trong JavaScript - Blog chia sẻ về mạng</title>
+    
+    
+    <link rel="stylesheet" href="https://httk136.github.io/blog/css/kawaii.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <meta name="description" content="Xin chào, mình là Huỳnh Thi Tuấn Kiệt, Sinh viên Công nghệ Thông tin – HUTECH, đam mê lập trình web và mạng máy tính, đây là blog cá nhân nơi mình chia sẻ kiến thức về mạng.">
+    <meta name="author" content="yuis-ice">
+    
+    
+    <link rel="icon" href="/favicon.ico">
+    
+</head>
+<body class="kawaii-body">
+    <div class="kawaii-container">
+        <header class="kawaii-header">
+    <nav class="kawaii-nav">
+        <div class="kawaii-nav-brand">
+            <a href="https://httk136.github.io/blog/" class="kawaii-logo">
+                
+                <span class="kawaii-logo-text">Blog chia sẻ về mạng</span>
+                
+            </a>
+        </div>
+        
+        <div class="kawaii-nav-menu" id="kawaii-nav-menu">
+            
+            <a href="/blog/" class="kawaii-nav-link ">
+                Home
+            </a>
+            
+            <a href="/blog/posts" class="kawaii-nav-link ">
+                Posts
+            </a>
+            
+            
+            
+        </div>
+        
+        <div class="kawaii-nav-extras">
+            
+            <button class="kawaii-search-toggle" aria-label="Toggle search">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="21 21l-4.35-4.35"></path>
+                </svg>
+            </button>
+            
+            
+            
+            <button class="kawaii-theme-toggle" aria-label="Toggle theme">
+                <svg class="kawaii-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="kawaii-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+            
+            
+            <button class="kawaii-mobile-toggle" aria-label="Toggle mobile menu">
+                <span class="kawaii-hamburger"></span>
+                <span class="kawaii-hamburger"></span>
+                <span class="kawaii-hamburger"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+        
+        <main class="kawaii-main">
+            
+<article class="kawaii-article">
+    <header class="kawaii-article-header">
+        <div class="kawaii-article-meta">
+            <time class="kawaii-date" datetime="2025-10-21">
+                October 21, 2025
+            </time>
+            
+            <div class="kawaii-tags">
+                
+                <span class="kawaii-tag">#JavaScript</span>
+                
+                <span class="kawaii-tag">#Variables</span>
+                
+                <span class="kawaii-tag">#Data Types</span>
+                
+            </div>
+            
+        </div>
+        <h1 class="kawaii-article-title">Biến và Kiểu dữ liệu trong JavaScript</h1>
+        
+    </header>
+    
+    <div class="kawaii-content">
+        <h3 id="mở-đầu">Mở đầu</h3>
+<p>JavaScript là một trong những ngôn ngữ lập trình phổ biến nhất hiện nay, được dùng rộng rãi để xây dựng website, ứng dụng và nhiều công nghệ web hiện đại.<br>
+Để học tốt JavaScript, bạn cần nắm vững hai khái niệm quan trọng nhất: <strong>Biến (Variables)</strong> và <strong>Kiểu dữ liệu (Data Types)</strong>.<br>
+Biến giúp bạn lưu trữ thông tin, còn kiểu dữ liệu quyết định dạng của thông tin đó. Hiểu rõ cách khai báo biến và các kiểu dữ liệu sẽ giúp bạn viết chương trình dễ bảo trì, dễ mở rộng và ít gặp lỗi hơn.</p>
+<hr>
+<h2 id="1-biến-trong-javascript">1. Biến trong JavaScript</h2>
+<p>Biến là &ldquo;chiếc hộp&rdquo; dùng để lưu trữ giá trị trong chương trình.<br>
+JavaScript hỗ trợ 3 cách khai báo biến: <code>var</code>, <code>let</code> và <code>const</code>.</p>
+<h3 id="11-var">1.1. <code>var</code></h3>
+<ul>
+<li>Là từ khóa cũ, được giới thiệu từ phiên bản đầu tiên của JavaScript.</li>
+<li>Phạm vi (scope): <strong>function scope</strong> (chỉ tồn tại trong hàm).</li>
+<li>Có thể khai báo lại nhiều lần trong cùng phạm vi.</li>
+<li>Dễ gây lỗi khi dùng trong vòng lặp hoặc trong các block code.</li>
+</ul>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>; <span style="color:#75715e">// hợp lệ
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span>); <span style="color:#75715e">// 20
+</span></span></span></code></pre></div><h3 id="12-let">1.2. <code>let</code></h3>
+<ul>
+<li>Giới thiệu từ ES6 (2015), hiện là cách khai báo biến được khuyến khích sử dụng.</li>
+<li>Phạm vi: <strong>block scope</strong> (chỉ tồn tại trong <code>{ ... }</code>).</li>
+<li>Không thể khai báo lại trong cùng một phạm vi.</li>
+<li>Thường dùng cho những giá trị có thể thay đổi.</li>
+</ul>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">15</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">30</span>; <span style="color:#75715e">// hợp lệ
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">y</span>); <span style="color:#75715e">// 30
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// let y = 40; ❌ báo lỗi nếu khai báo lại
+</span></span></span></code></pre></div><h3 id="13-const">1.3. <code>const</code></h3>
+<ul>
+<li>Cũng xuất hiện từ ES6.</li>
+<li>Dùng để khai báo <strong>hằng số</strong>, nghĩa là giá trị không thể thay đổi sau khi gán.</li>
+<li>Phạm vi: <strong>block scope</strong>.</li>
+<li>Nếu khai báo object hoặc array với <code>const</code>, bạn có thể thay đổi nội dung bên trong, nhưng không thể gán lại biến.</li>
+</ul>
+<p>Ví dụ:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">PI</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.14</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// PI = 4; ❌ báo lỗi
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">person</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Kiệt&#34;</span>, <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span> };
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">person</span>.<span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">21</span>; <span style="color:#75715e">// hợp lệ (thay đổi thuộc tính trong object)
+</span></span></span></code></pre></div><p>👉 <strong>Tóm tắt nhanh</strong>:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Từ khóa</th>
+          <th>Phạm vi</th>
+          <th>Có thể gán lại</th>
+          <th>Có thể khai báo lại</th>
+          <th>Ghi chú</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>var</code></td>
+          <td>function</td>
+          <td>✔</td>
+          <td>✔</td>
+          <td>Ít dùng trong code hiện đại</td>
+      </tr>
+      <tr>
+          <td><code>let</code></td>
+          <td>block</td>
+          <td>✔</td>
+          <td>❌</td>
+          <td>Dùng cho biến có thể thay đổi</td>
+      </tr>
+      <tr>
+          <td><code>const</code></td>
+          <td>block</td>
+          <td>❌</td>
+          <td>❌</td>
+          <td>Dùng cho hằng số hoặc object/array không đổi tham chiếu</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="2-kiểu-dữ-liệu-trong-javascript">2. Kiểu dữ liệu trong JavaScript</h2>
+<p>JavaScript là <strong>ngôn ngữ dynamic typing (kiểu động)</strong> → khi khai báo biến, bạn không cần chỉ định kiểu dữ liệu.<br>
+Kiểu dữ liệu sẽ được xác định dựa vào giá trị được gán.</p>
+<h3 id="21-kiểu-dữ-liệu-nguyên-thủy-primitive">2.1. Kiểu dữ liệu nguyên thủy (Primitive)</h3>
+<p>Có 7 loại kiểu dữ liệu cơ bản:</p>
+<ol>
+<li>
+<p><strong>Number</strong> – dùng cho số nguyên và số thực.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.14</span>;
+</span></span></code></pre></div></li>
+<li>
+<p><strong>String</strong> – chuỗi ký tự, viết bằng <code>' '</code>, <code>&quot; &quot;</code> hoặc <code>`</code> (template string).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Kiệt&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">greeting</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`Xin chào, </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>;
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Boolean</strong> – chỉ nhận <code>true</code> hoặc <code>false</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">isActive</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">isAdmin</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Undefined</strong> – khi biến được khai báo nhưng chưa gán giá trị.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span>); <span style="color:#75715e">// undefined
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>Null</strong> – giá trị rỗng, thường dùng khi muốn reset biến.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Symbol</strong> (ES6) – tạo giá trị duy nhất, thường dùng để làm key cho object.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Symbol</span>(<span style="color:#e6db74">&#34;id&#34;</span>);
+</span></span></code></pre></div></li>
+<li>
+<p><strong>BigInt</strong> (ES11) – dùng cho số nguyên rất lớn.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">big</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">123456789012345678901234567890</span><span style="color:#a6e22e">n</span>;
+</span></span></code></pre></div></li>
+</ol>
+<hr>
+<h3 id="22-kiểu-dữ-liệu-tham-chiếu-reference">2.2. Kiểu dữ liệu tham chiếu (Reference)</h3>
+<p>Khác với kiểu nguyên thủy, kiểu tham chiếu lưu <strong>địa chỉ ô nhớ</strong>, không lưu giá trị trực tiếp.</p>
+<ol>
+<li>
+<p><strong>Object</strong> – tập hợp các cặp key–value.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">person</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Kiệt&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">21</span>
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Array</strong> – mảng, dùng để lưu danh sách nhiều giá trị.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">numbers</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>];
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Function</strong> – là object đặc biệt có thể gọi thực thi.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sayHello</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Hello!&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+</ol>
+<hr>
+<h2 id="3-kiểm-tra-kiểu-dữ-liệu-với-typeof">3. Kiểm tra kiểu dữ liệu với <code>typeof</code></h2>
+<p>JavaScript cung cấp toán tử <code>typeof</code> để kiểm tra kiểu dữ liệu:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#ae81ff">10</span>);          <span style="color:#75715e">// &#34;number&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#e6db74">&#34;abc&#34;</span>);       <span style="color:#75715e">// &#34;string&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">true</span>);        <span style="color:#75715e">// &#34;boolean&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">undefined</span>);   <span style="color:#75715e">// &#34;undefined&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">null</span>);        <span style="color:#75715e">// &#34;object&#34; (điểm đặc biệt trong JS)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> {});          <span style="color:#75715e">// &#34;object&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> []);          <span style="color:#75715e">// &#34;object&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#66d9ef">typeof</span> <span style="color:#66d9ef">function</span>(){}); <span style="color:#75715e">// &#34;function&#34;
+</span></span></span></code></pre></div><hr>
+<h3 id="ví-dụ-tổng-hợp">Ví dụ tổng hợp</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">age</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">21</span>;                 <span style="color:#75715e">// Number
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fullName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Huỳnh Kiệt&#34;</span>; <span style="color:#75715e">// String
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">isStudent</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;         <span style="color:#75715e">// Boolean
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">address</span>;                  <span style="color:#75715e">// Undefined
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">car</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>;               <span style="color:#75715e">// Null
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">skills</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;JS&#34;</span>, <span style="color:#e6db74">&#34;HTML&#34;</span>];  <span style="color:#75715e">// Array
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">profile</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Kiệt&#34;</span>, <span style="color:#a6e22e">year</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2004</span> }; <span style="color:#75715e">// Object
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">showInfo</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Tên: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">profile</span>.<span style="color:#a6e22e">name</span><span style="color:#e6db74">}</span><span style="color:#e6db74">, Năm sinh: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">profile</span>.<span style="color:#a6e22e">year</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h3 id="kết-luận">Kết luận</h3>
+<ul>
+<li><strong>Biến</strong> trong JavaScript có thể khai báo bằng <code>var</code>, <code>let</code> hoặc <code>const</code>. Trong đó, <code>let</code> và <code>const</code> là lựa chọn an toàn và hiện đại hơn.</li>
+<li><strong>Kiểu dữ liệu</strong> chia thành 2 nhóm:
+<ul>
+<li><strong>Nguyên thủy</strong>: Number, String, Boolean, Undefined, Null, Symbol, BigInt.</li>
+<li><strong>Tham chiếu</strong>: Object, Array, Function.</li>
+</ul>
+</li>
+<li>JavaScript là ngôn ngữ <strong>động kiểu</strong>, vì vậy bạn cần cẩn thận khi làm việc với dữ liệu để tránh lỗi không mong muốn.</li>
+</ul>
+<p>Hiểu rõ biến và kiểu dữ liệu là nền tảng để học các phần nâng cao hơn như hàm, đối tượng, class, hay lập trình bất đồng bộ. Đây chính là bước khởi đầu vững chắc để trở thành một lập trình viên JavaScript giỏi.</p>
+
+    </div>
+    
+    
+    <nav class="kawaii-post-nav">
+        
+        <a href="https://httk136.github.io/blog/posts/bai-3-dieu-kien-va-vong-lap/" class="kawaii-nav-prev">
+            <span class="kawaii-nav-arrow">←</span>
+            <span class="kawaii-nav-text">Điều kiện và Vòng lặp trong JavaScript</span>
+        </a>
+        
+        
+        
+    </nav>
+    
+</article>
+
+        </main>
+        
+        <footer class="kawaii-footer">
+    <div class="kawaii-footer-content">
+        <div class="kawaii-footer-section">
+            <div class="kawaii-footer-brand">
+                <span class="kawaii-footer-logo">Blog chia sẻ về mạng</span>
+                <p class="kawaii-footer-description">
+                    Chia sẻ Mạng máy tính
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="kawaii-footer-section">
+            <h4 class="kawaii-footer-title">Connect</h4>
+            <div class="kawaii-social-links">
+                
+                <a href="https://github.com/HTTK136" class="kawaii-social-link" target="_blank" rel="noopener noreferrer" aria-label="github">
+                    
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    
+                </a>
+                
+                <a href="https://www.facebook.com/B.Boy1306" class="kawaii-social-link" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M22.675 0h-21.35C.6 0 0 .6 0 1.325v21.351C0 23.4.6 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.794.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116C23.4 24 24 23.4 24 22.676V1.325C24 .6 23.4 0 22.675 0z"/>
+                    </svg>
+                    
+                </a>
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="kawaii-footer-section">
+            <h4 class="kawaii-footer-title">Quick Links</h4>
+            <div class="kawaii-footer-links">
+                
+                <a href="https://github.com/yuis-ice/hugo-kawaii#readme" class="kawaii-footer-link">Documentation</a>
+                
+                <a href="https://github.com/yuis-ice/hugo-kawaii" class="kawaii-footer-link">Download</a>
+                
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="kawaii-footer-bottom">
+        <div class="kawaii-footer-bottom-content">
+            <p class="kawaii-copyright">
+                © 2025 Blog chia sẻ về mạng. 
+                Chia sẻ Mạng máy tính.
+            </p>
+            <p class="kawaii-theme-credit">
+                Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> 
+                & <span class="kawaii-heart">💖</span> Kawaii Theme
+            </p>
+        </div>
+    </div>
+</footer>
+    </div>
+    
+    <script src="/blog/js/kawaii.js"></script>
+</body>
+</html>

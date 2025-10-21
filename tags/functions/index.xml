@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Functions on Blog chia sẻ về mạng</title>
+    <link>https://httk136.github.io/blog/tags/functions/</link>
+    <description>Recent content in Functions on Blog chia sẻ về mạng</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://httk136.github.io/blog/tags/functions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hàm trong JavaScript</title>
+      <link>https://httk136.github.io/blog/posts/bai-4-ham-trong-js/</link>
+      <pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://httk136.github.io/blog/posts/bai-4-ham-trong-js/</guid>
+      <description>&lt;h3 id=&#34;mở-đầu&#34;&gt;Mở đầu&lt;/h3&gt;&#xA;&lt;p&gt;Trong JavaScript, &lt;strong&gt;hàm (function)&lt;/strong&gt; là khối mã (code block) có thể tái sử dụng nhiều lần để thực hiện một công việc cụ thể.&lt;br&gt;&#xA;Hàm giúp chương trình &lt;strong&gt;dễ bảo trì, dễ đọc và giảm lặp code&lt;/strong&gt;. Đây là một trong những khái niệm cốt lõi bạn phải nắm vững khi học JavaScript.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-định-nghĩa-hàm&#34;&gt;1. Định nghĩa hàm&lt;/h2&gt;&#xA;&lt;p&gt;Hàm trong JavaScript là một tập hợp các câu lệnh được nhóm lại, có thể gọi thực thi bất cứ khi nào cần.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

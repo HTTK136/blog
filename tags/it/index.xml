@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IT on Blog chia sẻ về mạng</title>
+    <link>https://httk136.github.io/blog/tags/it/</link>
+    <description>Recent content in IT on Blog chia sẻ về mạng</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://httk136.github.io/blog/tags/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mạng máy tính</title>
+      <link>https://httk136.github.io/blog/posts/bai-7-mang-may-tinh/</link>
+      <pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://httk136.github.io/blog/posts/bai-7-mang-may-tinh/</guid>
+      <description>&lt;h3 id=&#34;mở-đầu&#34;&gt;Mở đầu&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Mạng máy tính (Computer Network)&lt;/strong&gt; là nền tảng quan trọng của công nghệ thông tin hiện đại.&lt;br&gt;&#xA;Nhờ mạng máy tính, các thiết bị có thể &lt;strong&gt;kết nối, chia sẻ tài nguyên, trao đổi dữ liệu và giao tiếp với nhau&lt;/strong&gt;.&lt;br&gt;&#xA;Từ mạng cục bộ trong gia đình, công ty cho đến Internet toàn cầu, tất cả đều dựa trên nguyên lý hoạt động của mạng máy tính.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
