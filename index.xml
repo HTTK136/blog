@@ -6,8 +6,15 @@
     <description>Recent content in Giới thiệu on Blog chia sẻ về mạng</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://httk136.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giới thiệu</title>
+      <link>https://httk136.github.io/blog/about/</link>
+      <pubDate>Wed, 22 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://httk136.github.io/blog/about/</guid>
+      <description>&lt;h1 id=&#34;-xin-chào-mình-là-huỳnh-thi-tuấn-kiệt&#34;&gt;👋 Xin chào, mình là &lt;strong&gt;Huỳnh Thi Tuấn Kiệt&lt;/strong&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Chào mừng bạn đến với &lt;strong&gt;Blog chia sẻ về mạng&lt;/strong&gt; — không gian nhỏ của mình để lưu trữ và chia sẻ kiến thức trong quá trình học tập, nghiên cứu và làm việc về &lt;strong&gt;Công nghệ thông tin&lt;/strong&gt;, đặc biệt là các chủ đề liên quan đến &lt;strong&gt;Lập trình Web&lt;/strong&gt; và &lt;strong&gt;Mạng máy tính&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-về-bản-thân&#34;&gt;🧑‍💻 Về bản thân&lt;/h2&gt;&#xA;&lt;p&gt;Mình hiện là sinh viên năm 4 ngành &lt;strong&gt;Công nghệ Thông tin&lt;/strong&gt; tại &lt;strong&gt;Đại học HUTECH&lt;/strong&gt;.&lt;br&gt;&#xA;Với niềm đam mê công nghệ, mình luôn thích tìm hiểu cách các hệ thống mạng hoạt động, cách giao tiếp giữa máy tính, và đặc biệt là cách kết hợp giữa &lt;strong&gt;lập trình&lt;/strong&gt; và &lt;strong&gt;hạ tầng mạng&lt;/strong&gt; để tạo nên những ứng dụng hiện đại, bảo mật và ổn định.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Biến và Kiểu dữ liệu trong JavaScript</title>
       <link>https://httk136.github.io/blog/posts/bai-2-bien-va-kieu-du-lieu/</link>
