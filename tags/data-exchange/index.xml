@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Exchange on Blog chia sẻ về mạng</title>
+    <link>https://httk136.github.io/blog/tags/data-exchange/</link>
+    <description>Recent content in Data Exchange on Blog chia sẻ về mạng</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://httk136.github.io/blog/tags/data-exchange/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JSON trong JavaScript</title>
+      <link>https://httk136.github.io/blog/posts/bai-6-object-json/</link>
+      <pubDate>Tue, 21 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://httk136.github.io/blog/posts/bai-6-object-json/</guid>
+      <description>&lt;h3 id=&#34;mở-đầu&#34;&gt;Mở đầu&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;JSON (JavaScript Object Notation)&lt;/strong&gt; là một định dạng dữ liệu phổ biến, nhẹ và dễ đọc, thường được dùng để trao đổi dữ liệu giữa &lt;strong&gt;client&lt;/strong&gt; (trình duyệt) và &lt;strong&gt;server&lt;/strong&gt;.&lt;br&gt;&#xA;Trong JavaScript, JSON rất quan trọng vì nó là cách phổ biến để &lt;strong&gt;lưu trữ và truyền dữ liệu&lt;/strong&gt; trong các ứng dụng web hiện đại.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-json-là-gì&#34;&gt;1. JSON là gì?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;JSON có cấu trúc tương tự như &lt;strong&gt;object trong JavaScript&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Dữ liệu trong JSON được biểu diễn dưới dạng &lt;strong&gt;cặp key–value&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Giá trị có thể là: &lt;code&gt;number&lt;/code&gt;, &lt;code&gt;string&lt;/code&gt;, &lt;code&gt;boolean&lt;/code&gt;, &lt;code&gt;null&lt;/code&gt;, &lt;code&gt;object&lt;/code&gt;, &lt;code&gt;array&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Ví dụ JSON:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
